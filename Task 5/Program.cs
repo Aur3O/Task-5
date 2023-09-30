@@ -17,10 +17,11 @@ namespace Task_5
         {
             List<Person> people = new List<Person>();
 
-            Console.WriteLine("Enter names and year of birth (separated by a comma), or press Enter to finish:");
+            Console.WriteLine("Please, give names and birth year of a person. Empty input will stop the input.");
 
             while (true)
             {
+                Console.Write("Give a name: ");
                 string input = Console.ReadLine();
                 if (string.IsNullOrWhiteSpace(input))
                 {
